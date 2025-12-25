@@ -1,0 +1,89 @@
+{
+  "allBrands": [
+    {
+      "brandName": "Acme Corp",
+      "snapshot": {
+        "visibilityScore": 82,
+        "eeatScore": 74,
+        "keywordCoverage": 41
+      },
+      "modules": [
+        {
+          "id": "visibility",
+          "name": "LLM Visibility",
+          "score": 82,
+          "insights": ["Acme frequently appears in ChatGPT responses for product comparisons"],
+          "recommendations": ["Expand technical documentation and FAQs"]
+        }
+      ]
+    },
+    {
+      "brandName": "Globex UI",
+      "snapshot": {
+        "visibilityScore": 45,
+        "eeatScore": 30,
+        "keywordCoverage": 12
+      },
+      "modules": [
+        {
+          "id": "visibility",
+          "name": "LLM Visibility",
+          "score": 45,
+          "insights": ["Globex is rarely mentioned by Perplexity and Gemini"],
+          "recommendations": ["Improve knowledge graph signals and brand citations"]
+        }
+      ]
+    },
+    {
+      "brandName": "NovaTech",
+      "snapshot": {
+        "visibilityScore": 67,
+        "eeatScore": 61,
+        "keywordCoverage": 33
+      },
+      "modules": [
+        {
+          "id": "visibility",
+          "name": "LLM Visibility",
+          "score": 67,
+          "insights": ["NovaTech appears in mid-funnel AI search queries"],
+          "recommendations": ["Publish authoritative comparison and explainer content"]
+        }
+      ]
+    },
+    {
+      "brandName": "Zenith Labs",
+      "snapshot": {
+        "visibilityScore": 91,
+        "eeatScore": 88,
+        "keywordCoverage": 64
+      },
+      "modules": [
+        {
+          "id": "visibility",
+          "name": "LLM Visibility",
+          "score": 91,
+          "insights": ["Zenith Labs is treated as a primary source by LLMs"],
+          "recommendations": ["Maintain content freshness and expert authorship"]
+        }
+      ]
+    },
+    {
+      "brandName": "PixelCraft",
+      "snapshot": {
+        "visibilityScore": 38,
+        "eeatScore": 42,
+        "keywordCoverage": 19
+      },
+      "modules": [
+        {
+          "id": "visibility",
+          "name": "LLM Visibility",
+          "score": 38,
+          "insights": ["PixelCraft lacks structured data for AI indexing"],
+          "recommendations": ["Add schema markup and improve site authority"]
+        }
+      ]
+    }
+  ]
+}
