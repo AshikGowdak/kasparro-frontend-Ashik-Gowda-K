@@ -8,7 +8,7 @@ This repository contains a **fully mocked, production-quality frontend** that de
 
 ## 🚀 Live Demo
 🔗 **Deployed on Vercel:**
-
+https://kasparro-frontend-ashik-gowda-k-dzu.vercel.app/
 
 ---
 
