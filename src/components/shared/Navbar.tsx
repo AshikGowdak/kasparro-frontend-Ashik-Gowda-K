@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+// Navbar component for site-wide navigation
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 border-b bg-white/90 backdrop-blur-md shadow-sm">

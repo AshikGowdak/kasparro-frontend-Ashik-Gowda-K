@@ -3,6 +3,7 @@ import rawData from "@/data/audit-data.json";
 // 1. We use this to define the type of our return data
 import { BrandAuditData } from "@/types/audit"; 
 
+// Define the shape of our store's state and actions
 interface AuditState {
   selectedBrand: string;
   selectedModuleId: string;
@@ -12,6 +13,7 @@ interface AuditState {
   getBrandData: () => BrandAuditData; 
 }
 
+// 3. Create the Zustand store with initial state and actions
 export const useAuditStore = create<AuditState>((set, get) => ({
   selectedBrand: "Acme Corp",
   selectedModuleId: "visibility",

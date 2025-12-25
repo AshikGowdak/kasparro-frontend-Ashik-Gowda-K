@@ -1,3 +1,5 @@
+// AboutPage component to display company mission, philosophy, and vision
+
 export default function AboutPage() {
   return (
     <section className="max-w-4xl mx-auto py-32 px-6">

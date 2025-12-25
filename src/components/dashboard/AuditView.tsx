@@ -8,6 +8,8 @@ import { AlertCircle, CheckCircle2 } from "lucide-react";
 
 const auditData = rawData as unknown as BrandAudit;
 
+// AuditView component to display insights and recommendations for the selected audit module
+
 export default function AuditView() {
   const { selectedModuleId } = useStore();
   
@@ -22,6 +24,8 @@ export default function AuditView() {
     );
   }
 
+  // Main render
+  
   return (
     <div className="animate-in fade-in slide-in-from-bottom-2 duration-500">
       <div className="flex justify-between items-end mb-8">

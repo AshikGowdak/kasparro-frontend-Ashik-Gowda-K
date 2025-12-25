@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+// Hero component for the marketing page
+
 export default function Hero() {
   return (
     <section className="py-24 px-6 text-center max-w-4xl mx-auto">

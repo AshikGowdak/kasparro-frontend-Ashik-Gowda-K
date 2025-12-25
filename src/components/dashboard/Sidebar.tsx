@@ -11,6 +11,7 @@ export default function Sidebar() {
   const brandData = getBrandData();
   const modules = brandData.modules;
 
+  // 3. Render the sidebar with modules
   return (
     <aside className="w-64 border-r bg-white h-screen flex flex-col sticky top-0">
       <div className="p-6 border-b">

@@ -5,6 +5,7 @@ import rawData from "@/data/audit-data.json";
 export function BrandSelector() {
   const { selectedBrand, setSelectedBrand } = useAuditStore();
 
+  // Render the brand selector dropdown
   return (
     <div className="flex flex-col gap-1">
       <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Brand</label>

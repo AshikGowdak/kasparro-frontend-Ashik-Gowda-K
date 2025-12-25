@@ -1,5 +1,7 @@
 import { Layers, Database, Cpu, LayoutTemplate } from "lucide-react";
 
+// PlatformPage component to display the AI audit pipeline
+
 export default function PlatformPage() {
   const pipeline = [
     {

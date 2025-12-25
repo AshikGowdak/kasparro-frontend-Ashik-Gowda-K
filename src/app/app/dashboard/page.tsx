@@ -1,3 +1,4 @@
+// dashboard page showing brand snapshot statistics
 "use client";
 import { useAuditStore } from "@/store/useAuditStore"; 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

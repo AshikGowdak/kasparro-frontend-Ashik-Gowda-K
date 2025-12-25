@@ -5,6 +5,8 @@ import * as TabsPrimitive from "@radix-ui/react-tabs"
 
 import { cn } from "@/lib/utils"
 
+// Tabs component definitions
+
 function Tabs({
   className,
   ...props
@@ -17,6 +19,8 @@ function Tabs({
     />
   )
 }
+
+// TabsList component definition
 
 function TabsList({
   className,
@@ -34,6 +38,8 @@ function TabsList({
   )
 }
 
+// TabsTrigger component definition
+
 function TabsTrigger({
   className,
   ...props
@@ -49,6 +55,8 @@ function TabsTrigger({
     />
   )
 }
+
+// TabsContent component definition
 
 function TabsContent({
   className,

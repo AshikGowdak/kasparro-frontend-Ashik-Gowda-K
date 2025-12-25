@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 
+// ArchitecturePage component to display system architecture steps
 export default function ArchitecturePage() {
   const steps = [
     { name: "InputAssembler", status: "Active", desc: "Aggregates raw domain data, mentions, and historical SEO snapshots into a unified context window." },
@@ -8,6 +9,7 @@ export default function ArchitecturePage() {
     { name: "Output Surfaces", status: "UI/API", desc: "Visualizes strategic recommendations and exports structured intelligence for marketing teams." }
   ];
 
+// Define the steps in the system architecture
   return (
     <div className="max-w-4xl space-y-8">
       <h1 className="text-2xl font-black italic tracking-tighter">SYSTEM ARCHITECTURE</h1>

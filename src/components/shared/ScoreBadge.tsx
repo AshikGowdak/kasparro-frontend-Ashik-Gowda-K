@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 
+// ScoreBadge component to display score with color coding
+
 export default function ScoreBadge({ score }: { score: number }) {
   const getColor = () => {
     if (score >= 80) return "bg-green-100 text-green-700 border-green-200";

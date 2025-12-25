@@ -2,6 +2,7 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
+// Card component with subcomponents
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -14,6 +15,8 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
     />
   )
 }
+
+// Card subcomponents
 
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
@@ -28,6 +31,8 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+// CardTitle component
+
 function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -37,6 +42,8 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
     />
   )
 }
+
+// CardDescription component
 
 function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   return (
@@ -48,6 +55,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+// CardAction component
 function CardAction({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -61,6 +69,7 @@ function CardAction({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+// CardContent component
 function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -71,6 +80,7 @@ function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+// CardFooter component
 function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -81,6 +91,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+// Exporting Card and its subcomponents
 export {
   Card,
   CardHeader,

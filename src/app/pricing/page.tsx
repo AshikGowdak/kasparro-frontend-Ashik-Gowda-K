@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Check, HelpCircle, ArrowRight } from 'lucide-react';
 
+// Define pricing tiers and their features
+
 const tiers = [
   {
     name: 'Starter',
