@@ -1,109 +1,106 @@
-# Kasparro  
-### AI-Native Brand Intelligence Platform
+Kasparro
+AI-Native Brand Intelligence Platform
 
-> Engineering-first frontend for visualizing brand visibility inside the latent space of Large Language Models (LLMs).
+An engineering-first frontend for visualizing brand visibility inside the latent space of Large Language Models (LLMs).
 
----
+🚀 Live Demo
 
-## 🚀 Live Demo
-🔗 **Deployed on Vercel:**
+🔗 Deployed on Vercel
 https://kasparro-frontend-ashik-gowda-k-i6ol-dgvw0770x.vercel.app/
 
+🧩 Tech Stack
 
-## 🧩 Tech Stack
+Framework: Next.js (App Router)
 
-- **Framework:** Next.js (App Router)
-- **Language:** TypeScript
-- **State Management:** Zustand
-- **UI:** Shadcn/UI + Tailwind CSS
-- **Architecture:** Feature-Sliced Design (FSD)
-- **Data Modeling:** Strict TypeScript interfaces
+Language: TypeScript
 
----
+State Management: Zustand
 
-## 🏗️ System Architecture & Design Decisions
+UI: Shadcn/UI + Tailwind CSS
 
-Kasparro is designed with a strong emphasis on **engineering quality, scalability, and system thinking**.  
-The project follows **Feature-Sliced Design (FSD)** to enforce clear boundaries and predictable data flow.
+Architecture: Feature-Sliced Design (FSD)
 
-### Component Layering Strategy
+Data Modeling: Strict TypeScript interfaces
 
-- **UI Layer (`/components/ui`)**  
-  Stateless, reusable design primitives focused on accessibility and visual consistency.
+🏗️ System Architecture & Design Decisions
 
-- **Feature Layer (`/components/features`)**  
-  Logic-heavy components such as `AuditContent` and `ArchitectureDiagram` that connect UI with application state.
+Kasparro is built with a strong emphasis on engineering quality, scalability, and system clarity.
+The project follows Feature-Sliced Design (FSD) to enforce predictable data flow and clear separation of concerns.
 
-- **Layout Layer (`/components/layout`)**  
-  Persistent structural components (Navbar, Footer) implemented using **Next.js App Router layouts**.
+Component Layering Strategy
 
-> **Design Goal:**  
-> Maintain separation of concerns while keeping the UI scalable and easy to reason about.
+UI Layer (/components/ui)
+Stateless, reusable design primitives focused on accessibility and consistency.
 
----
+Feature Layer (/components/features)
+Logic-heavy components such as AuditContent and ArchitectureDiagram that connect UI with application state.
 
-## 🧠 State Management & Data Modeling
+Layout Layer (/components/layout)
+Persistent structural components (Navbar, Footer) implemented using Next.js App Router layouts.
 
-- **Zustand (Global State)**  
-  Handles brand selection and neural module switching using a simple, one-way data flow.
+Design Goal:
+Keep the UI scalable, readable, and easy to reason about as the system grows.
 
-- **Strict Type Safety**  
-  All audit data is defined in `src/types/audit.ts`.  
-  Recommendations are modeled as structured objects with **impact levels**, not flat strings.
+🧠 State Management & Data Modeling
 
-- **Single Source of Truth (SSOT)**  
-  The UI is a direct reflection of `audit-data.json`, ensuring consistency across the system.
+Zustand (Global State)
+Handles brand selection and neural module switching with a simple one-way data flow.
 
----
+Strict Type Safety
+All audit data contracts are defined in src/types/audit.ts.
 
-## 🧠 Technical Implementation Highlights
+Single Source of Truth (SSOT)
+UI renders directly from audit-data.json, ensuring consistency across the application.
 
-This platform intentionally explains the **“Physics of Inference”** used by modern AI systems:
+🧠 Technical Implementation Highlights
 
-- **Inference Visualization**  
-  Terminal-style UI showing how LLMs traverse high-dimensional latent space.
+Kasparro intentionally exposes the “Physics of Inference” used by modern AI systems:
 
-- **Vector Metric Comparison**  
-  Clear contrast between traditional **Inverted Index search (Google)** and **Neural Latent Space retrieval (LLMs)**.
+Inference Visualization
+Terminal-style UI representing LLM traversal through high-dimensional latent space.
 
-- **RAG Pipeline Alignment**  
-  Structured data designed to integrate cleanly with **Retrieval-Augmented Generation** workflows.
+Vector Metric Comparison
+Clear contrast between:
 
----
+Inverted Index Search (Traditional SEO)
 
-## 📁 Folder Structure (Next.js App Router)
+Neural Latent Space Retrieval (LLMs)
 
-
+RAG-Ready Data Design
+Structured data aligned for future Retrieval-Augmented Generation (RAG) pipelines.
 src/
 ├── app/
-│   ├── layout.tsx         # Root layout (persistent Navbar/Footer)
-│   ├── page.tsx           # Technical landing page
-│   ├── about/             # Philosophy & mission
-│   ├── platform/          # Architecture deep-dive
-│   └── audit/             # Core AI-SEO audit experience
+│   ├── layout.tsx            # Root layout (Navbar, Footer)
+│   ├── page.tsx              # Technical landing page
+│   ├── about/                # Philosophy & mission
+│   ├── platform/             # Architecture deep-dive
+│   └── audit/                # Core AI-SEO audit experience
+│
 ├── components/
-│   ├── layout/            # Persistent UI components
-│   ├── features/          # Business logic components
-|   ├── marketing/
-│   └── shared/
-│   └── ui/                # Reusable UI primitives
+│   ├── layout/               # Persistent layout components
+│   ├── features/             # Feature-level business logic
+│   ├── marketing/            # Marketing & narrative sections
+│   ├── shared/               # Shared non-UI utilities
+│   └── ui/                   # Reusable UI primitives
+│
 ├── store/
-│   └── useAuditStore.ts   # Zustand global state
+│   └── useAuditStore.ts      # Zustand global store
+│
 ├── types/
-│   └── audit.ts           # TypeScript interfaces
+│   └── audit.ts              # TypeScript data contracts
+│
 └── data/
-    └── audit-data.json    # Centralized audit data
-
+    └── audit-data.json       # Centralized audit dataset
 🎯 UX Principles Applied
 
 Data Density Management
-Clear typography, spacing, and summaries to make complex neural data readable.
+Clear typography and spacing to make complex neural data readable.
 
 Founder–Engineer Tone
 Uses precise technical terms such as cosine similarity, stochastic sampling, and log probability.
 
 Predictable Flow
-Actionable optimizations are highlighted using color-coded impact levels.
+Actionable optimizations highlighted using color-coded impact levels.
 
 🧪 Engineering Focus
 
@@ -111,12 +108,10 @@ This project prioritizes:
 
 Deterministic state flow
 
-Type safety
+Strong type safety
 
 Scalable frontend architecture
 
 Clear separation of concerns
 
 Production-ready code quality
-
-
