@@ -5,7 +5,7 @@ An engineering-first frontend for visualizing brand visibility inside the latent
 
 ## 🚀 Live Demo
 **Deployed on Vercel:**  
-https://kasparro-frontend-ashik-gowda-k-i6ol-dgvw0770x.vercel.app/
+https://kasparro-frontend-ashik-gowda-k-i6ol-8dvquf7bq.vercel.app/
 
 ## 🧩 Tech Stack
 - **Framework:** Next.js (App Router)
