@@ -1,8 +1,7 @@
-# Kasparro – Frontend Engineering Assignment (V1)
+# Kasparro  
+### AI-Native Brand Intelligence Platform
 
-Kasparro is an AI-native SEO & Brand Intelligence platform designed for the AI-first search era (ChatGPT, Gemini, Perplexity, etc.).
-
-This repository contains a **fully mocked, production-quality frontend** that demonstrates how a complex, data-dense AI product can be communicated clearly through UI, architecture, and state modeling.
+> Engineering-first frontend for visualizing brand visibility inside the latent space of Large Language Models (LLMs).
 
 ---
 
@@ -10,95 +9,114 @@ This repository contains a **fully mocked, production-quality frontend** that de
 🔗 **Deployed on Vercel:**
 https://kasparro-frontend-ashik-gowda-k-dzu.vercel.app/
 
----
 
-## 🧠 Product Surfaces Implemented
+## 🧩 Tech Stack
 
-### 1️⃣ Public Website (Marketing + Product Narrative)
-Routes:
-- `/` — Home
-- `/platform` — Product Overview
-- `/about` — Mission & Product Philosophy
-
-Purpose:
-- Clearly explain Kasparro’s value proposition in under 10 seconds
-- Bridge marketing → product understanding
-- Communicate AI-SEO concepts clearly (not sales-heavy)
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **State Management:** Zustand
+- **UI:** Shadcn/UI + Tailwind CSS
+- **Architecture:** Feature-Sliced Design (FSD)
+- **Data Modeling:** Strict TypeScript interfaces
 
 ---
 
-### 2️⃣ Product Dashboard (Mocked, Authenticated Shell)
-Routes:
-- `/app/dashboard` — Brand snapshot
-- `/app/audit` — Core AI audit experience
-- `/app/architecture` — System-level understanding
+## 🏗️ System Architecture & Design Decisions
 
-Purpose:
-- Demonstrate system thinking
-- Model structured AI audit data
-- Present dense information with clarity
+Kasparro is designed with a strong emphasis on **engineering quality, scalability, and system thinking**.  
+The project follows **Feature-Sliced Design (FSD)** to enforce clear boundaries and predictable data flow.
 
-> **Note:** No authentication is implemented. The user is assumed to be logged in.
+### Component Layering Strategy
 
----
+- **UI Layer (`/components/ui`)**  
+  Stateless, reusable design primitives focused on accessibility and visual consistency.
 
-## 🧱 Tech Stack (Strictly Followed)
+- **Feature Layer (`/components/features`)**  
+  Logic-heavy components such as `AuditContent` and `ArchitectureDiagram` that connect UI with application state.
 
-- **Next.js** (App Router)
-- **TypeScript**
-- **Tailwind CSS**
-- **Zustand** (state management)
-- **shadcn/ui** (lightly customized components)
+- **Layout Layer (`/components/layout`)**  
+  Persistent structural components (Navbar, Footer) implemented using **Next.js App Router layouts**.
 
-
-All product content is driven via **typed, structured mock data**.
+> **Design Goal:**  
+> Maintain separation of concerns while keeping the UI scalable and easy to reason about.
 
 ---
 
-## 📁 Folder Structure
+## 🧠 State Management & Data Modeling
+
+- **Zustand (Global State)**  
+  Handles brand selection and neural module switching using a simple, one-way data flow.
+
+- **Strict Type Safety**  
+  All audit data is defined in `src/types/audit.ts`.  
+  Recommendations are modeled as structured objects with **impact levels**, not flat strings.
+
+- **Single Source of Truth (SSOT)**  
+  The UI is a direct reflection of `audit-data.json`, ensuring consistency across the system.
+
+---
+
+## 🧠 Technical Implementation Highlights
+
+This platform intentionally explains the **“Physics of Inference”** used by modern AI systems:
+
+- **Inference Visualization**  
+  Terminal-style UI showing how LLMs traverse high-dimensional latent space.
+
+- **Vector Metric Comparison**  
+  Clear contrast between traditional **Inverted Index search (Google)** and **Neural Latent Space retrieval (LLMs)**.
+
+- **RAG Pipeline Alignment**  
+  Structured data designed to integrate cleanly with **Retrieval-Augmented Generation** workflows.
+
+---
+
+## 📁 Folder Structure (Next.js App Router)
+
+
 src/
 ├── app/
-│ ├── layout.tsx
-│ ├── page.tsx
-│ ├── platform/page.tsx
-│ ├── about/page.tsx
-│ └── app/
-│ ├── layout.tsx
-│ ├── dashboard/page.tsx
-│ ├── audit/page.tsx
-│ └── architecture/page.tsx
-│
+│   ├── layout.tsx         # Root layout (persistent Navbar/Footer)
+│   ├── page.tsx           # Technical landing page
+│   ├── about/             # Philosophy & mission
+│   ├── platform/          # Architecture deep-dive
+│   └── audit/             # Core AI-SEO audit experience
 ├── components/
-│ ├── layout/ # Navbar, Footer, App Sidebar
-│ ├── marketing/ # Hero, Pipeline, Module Overview
-│ ├── dashboard/ # Audit UI, Snapshot Cards, Selectors
-│ └── ui/ # shadcn/ui primitives
-│
-├── data/
-│ ├── brands.json
-│ └── audit-modules.json
-│
+│   ├── layout/            # Persistent UI components
+│   ├── features/          # Business logic components
+|   ├── marketing/
+│   └── shared/
+│   └── ui/                # Reusable UI primitives
 ├── store/
-│ └── useAppStore.ts
-│
+│   └── useAuditStore.ts   # Zustand global state
 ├── types/
-│ └── index.ts
-│
-└── lib/
-└── utils.ts
+│   └── audit.ts           # TypeScript interfaces
+└── data/
+    └── audit-data.json    # Centralized audit data
 
 🎯 UX Principles Applied
 
-Clear information hierarchy
-Readable typography for dense data
-Subtle micro-interactions (hover states, transitions)
-Focus on clarity over visual noise
+Data Density Management
+Clear typography, spacing, and summaries to make complex neural data readable.
+
+Founder–Engineer Tone
+Uses precise technical terms such as cosine similarity, stochastic sampling, and log probability.
+
+Predictable Flow
+Actionable optimizations are highlighted using color-coded impact levels.
+
+🧪 Engineering Focus
+
+This project prioritizes:
+
+Deterministic state flow
+
+Type safety
+
+Scalable frontend architecture
+
+Clear separation of concerns
+
+Production-ready code quality
 
 
-This project demonstrates:
-
-System-level frontend thinking.
-Clean component boundaries.
-Typed, structured data modeling.
-Clear communication of a complex AI product.
-Strong engineering discipline.
